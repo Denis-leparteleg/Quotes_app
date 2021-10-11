@@ -1,1 +1,24 @@
-<p>quote-form works!</p>
+<div class="container-fluid form">
+    <h2 class="text-center">Add a new Quote</h2>
+    <hr>
+    <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="name" required class="form-control" id="name" [(ngModel)]="newQuote.Name" name="name" #name='ngModel'>
+        </div>
+        <div class="form-group">
+            <label for="quote">Quote</label>
+            <textarea rows="5" type="text" class="form-control" id="quote" [(ngModel)]="newQuote.name" name="quote" #quote='ngModel' required></textarea>
+            
+        </div>
+        <div class="form-group">
+  
+            <label for="author">Author</label>
+            <textarea class="form-control" id="name" rows="1" [(ngModel)]="newQuote.author" name="author" #author="ngModel" required></textarea>
+            
+        </div><br>
+        <div class="input">
+            <button type="submit" class="">Add Quote</button> &nbsp;&nbsp;&nbsp; <input type="reset" value="Reset"><br><br>
+        </div>
+    </form>
+</div>
