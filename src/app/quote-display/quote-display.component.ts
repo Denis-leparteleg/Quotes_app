@@ -38,4 +38,11 @@ export class QuoteDisplayComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  addNewQuote(quote: Quote){
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength+1;
+    quote.completeDate = new Date(quote.completeDate)
+    this.quotes.push(quote)
+  }
+
 }
