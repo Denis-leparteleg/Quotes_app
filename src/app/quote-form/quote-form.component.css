@@ -1,0 +1,21 @@
+.form{
+    padding: 30px;
+    border-radius: 30px;
+    background: rgba(24, 24, 26, 0.068);
+   
+}
+.form:hover{
+    box-shadow: 0 0 10px , 0 0 20px rgb(112, 108, 108), 0 0 40px rgb(112, 108, 108);
+}
+button{
+    background-color: rgb(106, 27, 179);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
+  .input input{
+    background-color: rgb(106, 27, 179);
+    border: none;
+    border-radius: 5px;
+    color: white;
+  }
