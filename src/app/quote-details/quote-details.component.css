@@ -1,0 +1,12 @@
+.upvote{
+    color: green;
+}
+.downvote{
+    color: red;
+}
+button{
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
