@@ -1,0 +1,52 @@
+.background{
+  margin: 0;
+  padding: 0;
+  color: rgb(106, 27, 179);
+}
+  .nav-area {
+    flex: 1;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: rgb(106, 27, 179);
+    color: white;
+    font-weight: 600;
+  }
+
+  .navbar img {
+    margin: 0 16px;
+    
+  }
+
+  .navbar #github-logo {
+    height: 40px;
+    margin: 0 8px;
+  }
+
+  .navbar #github-logo:hover {
+    opacity: 0.8;
+    background-color: rgba(24, 24, 26, 0.068);
+    border-radius: 30px;
+  }
+  .card{
+    background-color: rgba(24, 24, 26, 0.068);
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 30px;
+}
+.card:hover{
+  box-shadow: 0 0 10px , 0 0 20px rgb(112, 108, 108), 0 0 40px rgb(112, 108, 108);
+  border-radius: 30px;
+}
+button{
+  background-color: rgb(106, 27, 179);
+  border: none;
+  border-radius: 5px;
+  color: white;
+}
