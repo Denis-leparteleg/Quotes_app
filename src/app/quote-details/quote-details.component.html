@@ -1,1 +1,26 @@
-<p>quote-details works!</p>
+<div class="container ">
+    <div class="row">
+         <div class="col-md-6">
+              <p>
+                   —{{quote.author}} ,
+                   {{quote.completeDate|dateCount}} days ago
+              </p>
+              <!-- <p> {{quote.completeDate|dateCount}} days ago</p> -->
+         </div>
+         <div class="col-md-6">
+              
+              <p>
+                   Posted by {{quote.yourName}}
+              </p>
+         </div>
+         <div class="col-md-6">
+              <i (click)='upvoteButtonClick()' class="fas fa-thumbs-up fa-2x thumb-up vote"></i>
+                   {{upvote}} &nbsp;&nbsp;&nbsp;
+              <i (click)='downvoteButtonClick()' class="fas fa-thumbs-down fa-2x thumb-down vote1"></i>
+                   {{downvote} <br><br>
+         </div>
+         <div class="col-md-6">
+              <button (click)= 'deleteQuote(true)'>Delete Quote</button>
+         </div>
+    </div>
+</div>
